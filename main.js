@@ -1,7 +1,9 @@
 'use strict'
 
+let a = 1;
+let b = 5;
 
-function sum(a = 1, b = 5) {
+function sum() {
     return a + b;
 };
 
