@@ -8,8 +8,12 @@
 let a = +prompt('Введите a');
 let b = +prompt('Введите b');
 
-if (a <=1 && b >=3) {
-    console.log('Сумма:', a + b);
-} else {
-    console.log('Разность:', a - b);
+let sumNumber = function () {
+    if (a <=1 && b >=3) {
+        console.log('Сумма:', a + b);
+    } else {
+        console.log('Разность:', a - b);
+    };
 };
+
+sumNumber();
