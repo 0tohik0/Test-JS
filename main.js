@@ -1,19 +1,14 @@
 'use strict'
 
-/* Если переменная a равна или меньше 1,
-а переменная b больше или равна 3, то выведите сумму
-этих переменных, иначе выведите их разность (результат вычитания).
-Проверьте работу скрипта при a и b, равном 1 и 3, 0 и 6, 3 и 5 */
 
-let sumNumber = function () {
-    let a = +prompt('Введите a');
-    let b = +prompt('Введите b');
-
-    if (a <=1 && b >=3) {
-        console.log('Сумма:', a + b);
-    } else {
-        console.log('Разность:', a - b);
-    };
+function sum(a = 1, b = 5) {
+    return a + b;
 };
 
-sumNumber();
+sum();
+
+function one (v = 3) {
+    console.log(v + sum());
+};
+
+one();
